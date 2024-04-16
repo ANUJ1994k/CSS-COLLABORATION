@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice in collaborationt</title>
+    <style>
+        #parent{
+            display: grid;
+            grid-template-columns: 300px 300px 300px;
+            grid-template-rows: 300px;
+            gap: 10px;
+            height: auto;            
+        }
+        .child{
+            border: 2px solid red;
+            gap: 10px;
+            display: grid;
+                    }
+                    #parent >div:nth-child(4){
+            margin-top: 90px;
+            height: 300px;
+            width: 300px;
+        }
+        #parent >div:nth-child(1){
+            margin-top: 90px;
+            height: 300px;
+            width: 300px;
+            background-image: url(./P1.JPG);
+            background-size: cover;
+        }
+        #parent >div:nth-child(2){
+            margin-top: 90px;
+            height: 300px;
+            width: 300px;
+            background-image: url(./P2.JPG);
+            background-size: cover;
+        }
+
+        #parent >div:nth-child(3){
+            margin-top: 90px;
+            height: 300px;
+            width: 300px;
+            background-image: url(./P3.JPG);
+            background-size: cover;
+
+        }
+        #parent >div:nth-child(4){
+            margin-top: 90px;
+            height: 300px;
+            width: 300px;
+            background-image: url(./P4.JPG);
+            background-size: cover;
+
+        }
+
+        .child>div:nth-child(1){
+            margin-top:310px ;
+            display: grid;
+            grid-template-columns: 70px 70px 70px;
+            grid-template-rows: 30px 30px;
+            gap: 10px;
+            margin-left: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="child">
+            <div>
+                <button>balloon</button>
+                <button>red</button>
+                <button>sky</button>
+                <button>blue</button>
+                <button>Hot air balloon</button>
+                </div>
+        </div>
+        <div class="child">
+            <div>
+                <button>balloons</button>
+                <button>houses</button>
+                <button>train</button>
+                <button>harbourside</button>
+            </div>         
+
+        </div>
+        <div class="child">
+            <div>
+                <button>balloons</button>
+                <button>inflating</button>
+                <button>green</button>
+                <button>blue</button>
+            </div>         
+
+        </div>
+        <div class="child">
+            <div class="child2">
+                <button>ballon</button>
+                <button>sun</button>
+                <button>sky</button>
+                <button>Summer</button>
+                <button>Bright</button>
+            </div>         
+
+        </div>
+    </div>
+    
+</body>
+</html>
